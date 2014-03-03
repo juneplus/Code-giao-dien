@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Juneplus</title>
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="icon-font/css/font-awesome.min.css">
+			<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+			<!-- Tag meta dành cho SEO -->
+			<link rel="stylesheet" href="js/flexslider/flexslider.css">
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+			<script src="js/autosize-master/jquery.autosize.js"></script>
+			<script src="js/raty/lib/jquery.raty.min.js"></script>
+			<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+			<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	</head>
+	<body>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+    $('.new-noti').click(function(){
+    	$('.user-notifications-content').toggle();
+    });
+    $('.new-mess').click(function(){
+    	$('.user-messages-content').toggle();
+    });
+    $('.new-store-noti').click(function(){
+    	$('.store-notifications-content').toggle();
+    });
+    $('.star-rating').raty({
+    	starOff: 'images/staron.png',
+  		starOn: 'images/staroff.png',
+    });
+    $(".fancybox").fancybox();
+});
+</script>
+		<section id="wrapper">
+			<section class="main-site-header">
+				<article class="juneplus"><a href="#"><h1>June<span class="green">plus</span></h1></a></article>
+				<form action="" class="searching-form">
+					<input type="text" name="search" placeHolder="Tìm kiếm sản phẩm, cửa hàng, bài đăng,...">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+				<section class="float-left"></section>
+				<section class="noti-info-but">
+					<section class="new-user-notifications noti-wrapper">
+						<button class="event-button new-noti"><i class="fa fa-flash"></i></button>
+						<section class="user-notifications-content noti-content">
+							<ul>
+								<li class="notification label"><h5>Thông báo mới:</h5><h4 class="new-notification-count">5</h4></li>
+								<li class="friend-invited unread">
+									<h2 class="announce">Bạn nhận được một lời mời kết bạn:</h2>
+									<section class="friend-invited-info">
+										<img src="images/hoang.jpg" class="friends-avatar" alt="">
+										<a href="#" class="friends-page-link">Việt Hoàng</a>
+									</section><!--End friend-invite-info-->
+									<section class="friend-invite-button">
+										<button class="agree">Đồng ý</button>
+										<button class="disagree">Từ chối</button>
+									</section><!--End friend-invite-button-->
+									<section class="clear"></section>
+								</li><!--End friends-invite-->
+								<li class="rate-bought-produce unread">
+									<img src="images/pic1.jpg" alt="" class="produce-img">
+									<h2 class="rate-produce-question">Bạn nghĩ sao về món đồ này ?</h2>
+									<a href="" class="link-to-produce"><h1 class="produce-name">Áo khoác siêu nhân</h1></a>
+									<section class="star-rating"></section><!--End star-rating-->
+									<form action="">
+										<input type="text" class="rate-bought-produce-input" placeHolder="Bạn nghĩ gì về món đồ này?">
+										<button class="rate-bought-produce-submit" type="submit">ok</button>
+									</form>
+									<section class="clear"></section>
+								</li><!--End rate-bought-produce-->
+								<li class="received-gift">
+									<img src="images/hoang.jpg" alt="" class="friends-avatar">
+									<a href="#" class="friends-page-link">Việt Hoàng</a>
+									<h2 class="noti">đã tặng bạn 1 món quà</h2>
+									<a href="#" class="link-to-gift-received">3 sản phẩm</a>
+									<section class="clear"></section>
+								</li><!--End received gift-->
+								<li class="store-accept-order unread">
+									<img src="images/store-ava.jpg" alt="" class="friends-avatar">
+									<a href="#" class="friends-page-link">aBC Store</a>
+									<h2 class="noti">đã chấp nhận đơn hàng của bạn</h2>
+									<a class="link-to-order">Đơn hàng từ aBC Store</a><!--link tới đơn hàng-->
+									<section class="clear"></section>
+								</li><!--End store-accept-order-->
+								<li class="friend-action-to-post">
+									<img src="images/hoang.jpg" alt="" class="friends-avatar">
+									<a href="#" class="friends-page-link">Việt Hoàng</a>
+									<h2 class="noti">đã bình luận về bài đăng của bạn</h2>
+									<a href="#" class="link-to-post">Tiêu đề bài viết</a>
+									<section class="clear"></section>
+								</li><!--End friend-action-to-post-->
+								<li class="store-invite-event">
+									<img src="images/store-ava.jpg" alt="" class="friends-avatar">
+									<a href="#" class="friends-page-link">aBC Store</a>
+									<h2 class="noti">đã mời bạn tham gia một sự kiện</h2>
+									<a href="#" class="link-to-event">Tên sự kiên</a>
+									<section class="clear"></section>
+								</li><!--End store-invite-event-->
+							</ul>
+						</section><!--End user-notifications-content-->
+					</section><!-- End  new-user-notification-->
+					<section class="new-user-messages noti-wrapper">
+						<button class="event-button new-mess"><i class="fa fa-envelope"></i></button>
+						<section class="user-messages-content noti-content">
+							<ul>
+								<li class="messages label">
+									<h5>Tin nhắn</h5>
+									<h4 class="new-messages-count">3 tin nhắn mới</h4>
+									<button class="message-noti-setting"><i class="fa fa-gear"></i></button>
+								</li><!-- End message label-->
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+							</ul>
+						</section><!--End user-messages-content-->
+					</section><!--End new-user-messages-->
+					<section class="new-store-notifications noti-wrapper">
+						<button class="event-button new-store-noti"><i class="fa fa-calendar-o"></i></button>
+						<section class="store-notifications-content noti-content">
+							<ul>
+								<li class="store-notifications label">
+									<h5>Thông báo từ cửa hàng:</h5>
+									<h4 class="new-store-notification count">3 thông báo mới</h4>
+								</li>	
+								<li class="to-my-store">
+									<img src="images/store-ava.jpg" alt="" class="my-store-avatar">
+									<h2 class="my-store-name">aBC Store</h2>
+									<a href="#" class="link-to-my-store">Tới cửa hàng</a>
+									<section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content unread">
+									<a href="#" class="link-to-my-store-order-lab">
+										<i class="fa fa-archive de-icon fa-3x"></i>
+										<h2 class="store-noti">Bạn có 3 đơn hàng mới</h2>
+										<section class="bottom-noti-detail">
+										<h3 class="total-order-value bottom-info">Tổng giá trị:</h3><h4 class="total-value-count">1.000.000 VND</h4></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content">
+									<a href="#" class="link-to-my-store-feedback-lab">
+										<i class="fa fa-comments de-icon fa-3x"></i>
+										<h2 class="store-noti">Bạn có 3 phản hồi mới từ khách hàng</h2>
+										<section class="bottom-noti-detail"><h3 class="feedback-user bottom-info">Từ</h3><h4 class="feedback-user-name">Việt Hoàng</h4><span class="bottom-info">và 3 người khác</span></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content unread">
+									<a href="#" class="link-to-my-store-message-lab">
+										<i class="fa fa-envelope de-icon fa-3x"></i>
+										<h2 class="store-noti">Bạn có 3 phản hồi mới từ khách hàng</h2>
+										<section class="bottom-noti-detail"><h3 class="message-user bottom-info">Từ</h3><h4 class="message-user-name">Việt Hoàng</h4><span class="bottom-info">và</span><h4 class="message-user-name else-count">3 người khác</h4></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content">
+									<a href="#" class="link-to-my-store-user-lab">
+										<i class="fa fa-heart de-icon fa-3x"></i>
+										<h2 class="store-noti">Cửa hàng của bạn có 3 lượt thích mới</h2>
+										<section class="bottom-noti-detail"><h4 class="liked-user-number bottom-info">3200</h4><span class="bottom-info">lượt thích</span></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content unread">
+									<a href="#" class="link-to-my-store-traffic-lab">
+										<i class="fa fa-star de-icon fa-3x"></i>
+										<h2 class="store-noti">Cửa hàng của bạn có 3 lượt đánh giá mới</h2>
+										<section class="bottom-noti-detail"><h4 class="rated-number bottom-info">4.2 sao</h4></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content unread">
+									<a href="#" class="link-to-my-store-user-lab">
+										<i class="fa fa-heart de-icon fa-3x"></i>
+										<h2 class="store-noti">Chúc mừng, cửa hàng đã thăng hạng</h2>
+										<section class="bottom-noti-detail"><h4 class="new-ratin bottom-info">Cửa hàng 4 sao</h4></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content unread">
+									<a href="#" class="link-to-my-store-user-lab">
+										<i class="fa fa-heart de-icon fa-3x"></i>
+										<h2 class="store-noti">Rất tiếc, cửa hàng đã tụt hạng</h2>
+										<section class="bottom-noti-detail"><h4 class="new-ratin bottom-info">Cửa hàng 3 sao</h4></section>
+									</a><section class="clear"></section>
+								</li>
+							</ul>
+						</section><!--End store-notifications-content-->
+					</section><!-- End new-store-notification-->
+					<section class="user-info">
+						<img src="images/mypic.jpg" alt="Quảng Nguyễn" width="40px" height="40px" class="user-avatar">
+						<a href="" class="user-name">Quảng Nguyễn</a>
+					</section><!--end user-info-->
+				</section><!-- End noti-info-but-->
+			</section><!--end main-stie-header-->
+			<section class="main-stie-content">
+				<section class="left-bar">
+					<section class="left-bar-search">
+						<form action="">
+							<input type="text" name="local-search" placeHolder="Tìm kiếm trong trang" class="left-bar-local-search">
+							<button type="submit" class="left-bar-local-search-submit"><i class="fa fa-search left-bar-local-search-icon"></i></button>
+						</form>
+					</section><!--End left-bar-search-->
+					<section class="left-bar-fav">
+						<h2>Ưa thích</h2>
+						<section class="left-bar-fav-menu">
+						<h1><a href="#">Cộng đồng</a></h1>
+						<h1><a href="#">Giỏ hàng</a></h1>
+						<h1><a href="#">Hoạt động</a></h1>
+						<h1><a href="#" class="bold-here left-bar-nav">Tin nhắn</a></h1>
+						<h1><a href="#">Bạn bè</a></h1>
+						<h1><a href="#">Cửa hàng</a></h1>
+						</section>
+					</section><!--end left-bar-nav-->
+					<section class="left-bar-market">
+						<h2>Chợ</h2>
+						<section class="left-bar-market-list">
+							
+						</section><!--End left-bar-market-list-->
+					</section><!--end left-bar-market-->
+					<section class="left-bar-ads">
+						<h2>Được tài trợ</h2>
+						<section class="left-bar-ad">
+							<section class="left-bar-ad-head">
+								<img src="images/ad.jpg" alt="" width="90px" class="left-bar-ad-produce-img">
+								<h3 class="cost">300.000</h3>
+								<h3 class="star-rate"><i class="fa fa-star rating"></i><i class="fa fa-star rating"></i><i class="fa fa-star rating"></i><i class="fa fa-star rating"></i><i class="fa fa-star rating"></i></h3>
+								<button class="left-bar-ads-buy-button">Mua</button>
+								<button class="left-bar-ads-gift-button"><i class="fa fa-gift fa-lg"></i></button>
+							</section><!--End left-bar-ad-head-->
+							<a href="#" class="left-bar-ad-produce-name">Áo khoác siêu nhân</a>
+							<h4 class="left-bar-ad-produce-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, iusto, maiores, delectus laudantium dolores illo libero nam omnis voluptas magnam fugiat quas nihil sunt. Illo ad soluta totam doloribus rem.</h4>
+						</section><!--End left-bar-ad-->
+						<section class="left-bar-ad">
+							<section class="left-bar-ad-head">
+								<img src="images/ad.jpg" alt="" width="90px" class="left-bar-ad-produce-img">
+								<h3 class="cost">300.000</h3>
+								<h3 class="star-rate"><i class="fa fa-star rating"></i><i class="fa fa-star rating"></i><i class="fa fa-star rating"></i><i class="fa fa-star rating"></i><i class="fa fa-star rating"></i></h3>
+								<button class="left-bar-ads-buy-button">Mua</button>
+								<button class="left-bar-ads-gift-button"><i class="fa fa-gift fa-lg"></i></button>
+							</section><!--End left-bar-ad-head-->
+							<a href="#" class="left-bar-ad-produce-name">Áo khoác siêu nhân</a>
+							<h4 class="left-bar-ad-produce-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, iusto, maiores, delectus laudantium dolores illo libero nam omnis voluptas magnam fugiat quas nihil sunt. Illo ad soluta totam doloribus rem.</h4>
+						</section><!--End left-bar-ad-->
+					</section><!--end left-bar-ads-->
+				</section><!-- End left-bar-->
+				<section class="user-content user-message">
+					<section class="user-message-header">
+						<h1 class="user-message-message-title">Tin nhắn</h1>
+					</section><!-- End user-message-header-->
+					<section class="user-message-content-wrapper border-with-radius">
+						<section class="user-message-content-sender-wrapper float-left">
+							<ul class="user-message-content-sender-info">
+								<li class="user-message-content-sender unread">
+									<button class="user-message-content-display-content-button">
+										<img src="images/hoang.jpg" alt="" class="float-left user-message-content-sender-avatar">
+										<h1 class="user-message-link-to-sender-page">Việt Hoàng</h1>
+										<h2 class="user-message-compendios-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis soluta veniam minus velit est dolores tempora asperiores nam ducimus qui.</h2>
+									</button>
+								</li>
+								<li class="user-message-content-sender unread">
+									<button class="user-message-content-display-content-button">
+										<img src="images/hoang.jpg" alt="" class="float-left user-message-content-sender-avatar">
+										<h1 class="user-message-link-to-sender-page">Việt Hoàng</h1>
+										<h2 class="user-message-compendios-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis soluta veniam minus velit est dolores tempora asperiores nam ducimus qui.</h2>
+									</button>
+								</li>
+								<li class="user-message-content-sender">
+									<button class="user-message-content-display-content-button">
+										<img src="images/hoang.jpg" alt="" class="float-left user-message-content-sender-avatar">
+										<h1 class="user-message-link-to-sender-page">Việt Hoàng</h1>
+										<h2 class="user-message-compendios-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis soluta veniam minus velit est dolores tempora asperiores nam ducimus qui.</h2>
+									</button>
+								</li>
+								<li class="user-message-content-sender">
+									<button class="user-message-content-display-content-button">
+										<img src="images/hoang.jpg" alt="" class="float-left user-message-content-sender-avatar">
+										<h1 class="user-message-link-to-sender-page">Việt Hoàng</h1>
+										<h2 class="user-message-compendios-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis soluta veniam minus velit est dolores tempora asperiores nam ducimus qui.</h2>
+									</button>
+								</li>
+								<li class="user-message-content-sender unread">
+									<button class="user-message-content-display-content-button">
+										<img src="images/hoang.jpg" alt="" class="float-left user-message-content-sender-avatar">
+										<h1 class="user-message-link-to-sender-page">Việt Hoàng</h1>
+										<h2 class="user-message-compendios-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis soluta veniam minus velit est dolores tempora asperiores nam ducimus qui.</h2>
+									</button>
+								</li>
+								<li class="user-message-content-sender">
+									<button class="user-message-content-display-content-button">
+										<img src="images/hoang.jpg" alt="" class="float-left user-message-content-sender-avatar">
+										<h1 class="user-message-link-to-sender-page">Việt Hoàng</h1>
+										<h2 class="user-message-compendios-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis soluta veniam minus velit est dolores tempora asperiores nam ducimus qui.</h2>
+									</button>
+								</li>
+								<li class="user-message-content-sender unread">
+									<button class="user-message-content-display-content-button">
+										<img src="images/hoang.jpg" alt="" class="float-left user-message-content-sender-avatar">
+										<h1 class="user-message-link-to-sender-page">Việt Hoàng</h1>
+										<h2 class="user-message-compendios-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis soluta veniam minus velit est dolores tempora asperiores nam ducimus qui.</h2>
+									</button>
+								</li>
+							</ul>
+						</section><!-- End user-message-content-sender-wrapper-->
+						<section class="user-message-sent-content-display-wrapper float-right">
+							<section class="user-message-sent-content-display">
+								<a href="#" class="user-message-link-to-sender-page link">Việt Hoàng</a>
+							</section><!-- user-message-sent-content-display-->
+							<article class="just-a-display-more-wrapper"><button class="link display-more">Xem thêm</button></article>
+							<ul class="user-message-sent-content-display-detail-wrapper">
+								<li class="user-message-sent-content-display-detail sender">
+									<img src="images/hoang.jpg" alt="" class="link user-message-content-sender-avatar">
+									<h3 class="user-message-sent-content-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, inventore laudantium non facilis dolorum vero nesciunt quidem omnis nihil quos earum et dolores autem quod pariatur eum nemo facere temporibus.</h3>
+									<h6 class="user-message-sent-time">17:00</h6>
+								</li>
+								<li class="user-message-sent-content-display-detail sender">
+									<img src="images/hoang.jpg" alt="" class="user-message-content-sender-avatar">
+									<h3 class="user-message-sent-content-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, vero, soluta facere natus enim explicabo optio sequi iure quo tempora! Nisi, nam natus repellendus unde aliquam delectus quos voluptatibus autem quo qui perspiciatis voluptate officia doloribus a impedit laudantium vel deleniti alias pariatur recusandae iure soluta quae explicabo praesentium itaque?</h3>
+									<h6 class="user-message-sent-time">17:00</h6>
+								</li>
+								<li class="user-message-sent-content-display-detail user">
+									<img src="images/mypic.jpg" alt="" class="user-message-content-sender-avatar">
+									<h3 class="user-message-sent-content-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, inventore laudantium non facilis dolorum vero nesciunt quidem omnis nihil quos earum et dolores autem quod pariatur eum nemo facere temporibus.</h3>
+									<h6 class="user-message-sent-time">17:00</h6>
+								</li>
+							</ul>
+							<form action="">
+							<textarea name="" id="user-message-send-message-texarea" class="border-with-radius" cols="30" rows="10" placeHolder="Tin nhắn của bạn..."></textarea>
+							</form>
+						</section><!-- End user-message-sent-content-display-->
+					</section><!-- End user-message-content-wrapper-->
+				</section><!--End user-content-->
+			</section><!--End main-site-content-->
+		</section><!--end wrapper-->
+	</body>
+</html>

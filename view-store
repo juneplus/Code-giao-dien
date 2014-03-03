@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Juneplus</title>
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="icon-font/css/font-awesome.min.css">
+			<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+			<!-- Tag meta dành cho SEO -->
+			<link rel="stylesheet" href="js/flexslider/flexslider.css">
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+			<script src="js/autosize-master/jquery.autosize.js"></script>
+			<script src="js/raty/lib/jquery.raty.min.js"></script>
+			<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+			<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	</head>
+	<body>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+    $('.new-noti').click(function(){
+    	$('.user-notifications-content').toggle();
+    });
+    $('.new-mess').click(function(){
+    	$('.user-messages-content').toggle();
+    });
+    $('.new-store-noti').click(function(){
+    	$('.store-notifications-content').toggle();
+    });
+    $('.star-rating').raty({
+    	starOff: 'images/staron.png',
+  		starOn: 'images/staroff.png',
+    });
+     $('.star-rating-big').raty({
+    	starOff: 'images/staroff-big.png',
+  		starOn: 'images/staron-big.png',
+    });
+    $(".fancybox").fancybox();
+});
+</script>
+		<section id="wrapper" class="view-store">
+			<section class="main-site-header none-border">
+				<article class="juneplus"><a href="#"><h1>June<span class="green">plus</span></h1></a></article>
+				<form action="" class="searching-form">
+					<input type="text" name="search" placeHolder="Tìm kiếm sản phẩm, cửa hàng, bài đăng,...">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+				<section class="float-left"></section>
+				<section class="noti-info-but">
+					<section class="new-user-notifications noti-wrapper">
+						<button class="event-button new-noti"><i class="fa fa-flash"></i></button>
+						<section class="user-notifications-content noti-content">
+							<ul>
+								<li class="notification label"><h5>Thông báo mới:</h5><h4 class="new-notification-count">5</h4></li>
+								<li class="friend-invited unread">
+									<h2 class="announce">Bạn nhận được một lời mời kết bạn:</h2>
+									<section class="friend-invited-info">
+										<img src="images/hoang.jpg" class="friends-avatar" alt="">
+										<a href="#" class="friends-page-link">Việt Hoàng</a>
+									</section><!--End friend-invite-info-->
+									<section class="friend-invite-button">
+										<button class="agree">Đồng ý</button>
+										<button class="disagree">Từ chối</button>
+									</section><!--End friend-invite-button-->
+									<section class="clear"></section>
+								</li><!--End friends-invite-->
+								<li class="rate-bought-produce unread">
+									<img src="images/pic1.jpg" alt="" class="produce-img">
+									<h2 class="rate-produce-question">Bạn nghĩ sao về món đồ này ?</h2>
+									<a href="" class="link-to-produce"><h1 class="produce-name">Áo khoác siêu nhân</h1></a>
+									<section class="star-rating"></section><!--End star-rating-->
+									<form action="">
+										<input type="text" class="rate-bought-produce-input" placeHolder="Bạn nghĩ gì về món đồ này?">
+										<button class="rate-bought-produce-submit" type="submit">ok</button>
+									</form>
+									<section class="clear"></section>
+								</li><!--End rate-bought-produce-->
+								<li class="received-gift">
+									<img src="images/hoang.jpg" alt="" class="friends-avatar">
+									<a href="#" class="friends-page-link">Việt Hoàng</a>
+									<h2 class="noti">đã tặng bạn 1 món quà</h2>
+									<a href="#" class="link-to-gift-received">3 sản phẩm</a>
+									<section class="clear"></section>
+								</li><!--End received gift-->
+								<li class="store-accept-order unread">
+									<img src="images/store-ava.jpg" alt="" class="friends-avatar">
+									<a href="#" class="friends-page-link">aBC Store</a>
+									<h2 class="noti">đã chấp nhận đơn hàng của bạn</h2>
+									<a class="link-to-order">Đơn hàng từ aBC Store</a><!--link tới đơn hàng-->
+									<section class="clear"></section>
+								</li><!--End store-accept-order-->
+								<li class="friend-action-to-post">
+									<img src="images/hoang.jpg" alt="" class="friends-avatar">
+									<a href="#" class="friends-page-link">Việt Hoàng</a>
+									<h2 class="noti">đã bình luận về bài đăng của bạn</h2>
+									<a href="#" class="link-to-post">Tiêu đề bài viết</a>
+									<section class="clear"></section>
+								</li><!--End friend-action-to-post-->
+								<li class="store-invite-event">
+									<img src="images/store-ava.jpg" alt="" class="friends-avatar">
+									<a href="#" class="friends-page-link">aBC Store</a>
+									<h2 class="noti">đã mời bạn tham gia một sự kiện</h2>
+									<a href="#" class="link-to-event">Tên sự kiên</a>
+									<section class="clear"></section>
+								</li><!--End store-invite-event-->
+							</ul>
+						</section><!--End user-notifications-content-->
+					</section><!-- End  new-user-notification-->
+					<section class="new-user-messages noti-wrapper">
+						<button class="event-button new-mess"><i class="fa fa-envelope"></i></button>
+						<section class="user-messages-content noti-content">
+							<ul>
+								<li class="messages label">
+									<h5>Tin nhắn</h5>
+									<h4 class="new-messages-count">3 tin nhắn mới</h4>
+									<button class="message-noti-setting"><i class="fa fa-gear"></i></button>
+								</li><!-- End message label-->
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+								<li class="users-messages unread">
+									<a href="" class="link-to-message">
+										<img src="images/hoang.jpg" alt="" class="friends-avatar">
+										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h6 class="sent-time">5:00</h6>
+										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
+									</a>
+									<section class="clear"></section>
+								</li>
+							</ul>
+						</section><!--End user-messages-content-->
+					</section><!--End new-user-messages-->
+					<section class="new-store-notifications noti-wrapper">
+						<button class="event-button new-store-noti"><i class="fa fa-calendar-o"></i></button>
+						<section class="store-notifications-content noti-content">
+							<ul>
+								<li class="store-notifications label">
+									<h5>Thông báo từ cửa hàng:</h5>
+									<h4 class="new-store-notification count">3 thông báo mới</h4>
+								</li>	
+								<li class="to-my-store">
+									<img src="images/store-ava.jpg" alt="" class="my-store-avatar">
+									<h2 class="my-store-name">aBC Store</h2>
+									<a href="#" class="link-to-my-store">Tới cửa hàng</a>
+									<section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content unread">
+									<a href="#" class="link-to-my-store-order-lab">
+										<i class="fa fa-archive de-icon fa-3x"></i>
+										<h2 class="store-noti">Bạn có 3 đơn hàng mới</h2>
+										<section class="bottom-noti-detail">
+										<h3 class="total-order-value bottom-info">Tổng giá trị:</h3><h4 class="total-value-count">1.000.000 VND</h4></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content">
+									<a href="#" class="link-to-my-store-feedback-lab">
+										<i class="fa fa-comments de-icon fa-3x"></i>
+										<h2 class="store-noti">Bạn có 3 phản hồi mới từ khách hàng</h2>
+										<section class="bottom-noti-detail"><h3 class="feedback-user bottom-info">Từ</h3><h4 class="feedback-user-name">Việt Hoàng</h4><span class="bottom-info">và 3 người khác</span></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content unread">
+									<a href="#" class="link-to-my-store-message-lab">
+										<i class="fa fa-envelope de-icon fa-3x"></i>
+										<h2 class="store-noti">Bạn có 3 phản hồi mới từ khách hàng</h2>
+										<section class="bottom-noti-detail"><h3 class="message-user bottom-info">Từ</h3><h4 class="message-user-name">Việt Hoàng</h4><span class="bottom-info">và</span><h4 class="message-user-name else-count">3 người khác</h4></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content">
+									<a href="#" class="link-to-my-store-user-lab">
+										<i class="fa fa-heart de-icon fa-3x"></i>
+										<h2 class="store-noti">Cửa hàng của bạn có 3 lượt thích mới</h2>
+										<section class="bottom-noti-detail"><h4 class="liked-user-number bottom-info">3200</h4><span class="bottom-info">lượt thích</span></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content unread">
+									<a href="#" class="link-to-my-store-traffic-lab">
+										<i class="fa fa-star de-icon fa-3x"></i>
+										<h2 class="store-noti">Cửa hàng của bạn có 3 lượt đánh giá mới</h2>
+										<section class="bottom-noti-detail"><h4 class="rated-number bottom-info">4.2 sao</h4></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content unread">
+									<a href="#" class="link-to-my-store-user-lab">
+										<i class="fa fa-heart de-icon fa-3x"></i>
+										<h2 class="store-noti">Chúc mừng, cửa hàng đã thăng hạng</h2>
+										<section class="bottom-noti-detail"><h4 class="new-ratin bottom-info">Cửa hàng 4 sao</h4></section>
+									</a><section class="clear"></section>
+								</li>
+								<li class="new-store-notification-content unread">
+									<a href="#" class="link-to-my-store-user-lab">
+										<i class="fa fa-heart de-icon fa-3x"></i>
+										<h2 class="store-noti">Rất tiếc, cửa hàng đã tụt hạng</h2>
+										<section class="bottom-noti-detail"><h4 class="new-ratin bottom-info">Cửa hàng 3 sao</h4></section>
+									</a><section class="clear"></section>
+								</li>
+							</ul>
+						</section><!--End store-notifications-content-->
+					</section><!-- End new-store-notification-->
+					<section class="user-info">
+						<img src="images/mypic.jpg" alt="Quảng Nguyễn" width="40px" height="40px" class="user-avatar">
+						<a href="" class="user-name">Quảng Nguyễn</a>
+					</section><!--end user-info-->
+				</section><!-- End noti-info-but-->
+			</section><!--end main-stie-header-->
+			<section class="view-store-header">
+				<section class="view-store-header-blur-img-slider">
+					<ul class="view-store-header-blur-img-slide-wrapper">
+						<li class="view-store-header-blur-img-slide"><img src="images/pic3.jpg" alt="" class="view-store-header-blur-img"></li>
+						<li class="view-store-header-blur-img-slide"><img src="images/pic3.jpg" alt="" class="view-store-header-blur-img"></li>
+						<li class="view-store-header-blur-img-slide"><img src="images/pic3.jpg" alt="" class="view-store-header-blur-img"></li>
+						<li class="view-store-header-blur-img-slide"><img src="images/pic3.jpg" alt="" class="view-store-header-blur-img"></li>
+						<li class="view-store-header-blur-img-slide no-margin"><img src="images/pic3.jpg" alt="" class="view-store-header-blur-img"></li>
+					</ul>
+				</section><!-- End view-store-header-blur-img-slide-->
+				<section class="view-store-header-basic-store-info float-left">
+					<img src="images/store-ava2.jpg" alt="" class="view-store-header-store-img">
+					<article class="view-store-header-wrapper-01"><i class="fa fa-check-circle-o"></i><h1 class="view-store-header-store-name">aBC Store</h1></article>
+					<h2 class="view-store-header-store-address">22 Tây Hồ, Hà Nội, Việt Nam</h2>
+					<h1 class="view-store-header-store-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, sed vel voluptate laboriosam tempore necessitatibus tempora earum veniam aliquam quas!</h1><section class="clear"></section>
+					<article class="view-store-header-store-follower-wrapper"><i class="fa fa-heart"></i><h3 class="view-store-header-store-follower">3200</h3></article>
+				</section><!-- End view-store-header-basic-store-info-->
+				<section class="view-store-header-rating-info float-right">
+					<section class="view-store-header-rating-wrapper">
+						<section class="star-rating-big"></section><!--End star-rating-->
+						<h1 class="view-store-header-store-rating-point">3.0</h1>
+						<h2 class="view-store-header-store-rated-number">320.000 bình chọn</h2>
+					</section><!-- End view-store-header-rating-wrapper-->
+				</section><!-- End view-store-header-rating-info-->
+				<button class="view-store-header-follow-store-button"><i class="fa fa-heart"></i></button>
+			</section><!-- End view-store-header-->
+			<section class="clear"></section>
+			<section class="view-store-homepage">
+				<section class="view-store-menu-bar">
+					<a href="#" class="view-store-menu">
+						<button class="view-store-menu-button">
+							<i class="fa fa-home"></i>
+							<h1 class="view-store-menu-link-title">Thông tin cửa hàng</h1>
+						</button>
+					</a>
+					<a href="#" class="view-store-menu">
+						<button class="view-store-menu-button">
+							<i class="fa fa-comments"></i>
+							<h1 class="view-store-menu-link-title">Phản hồi</h1>
+						</button>
+					</a>
+					<a href="#" class="view-store-menu">
+						<button class="view-store-menu-button">
+							<i class="fa fa-barcode"></i>
+							<h1 class="view-store-menu-link-title">Sản phẩm</h1>
+						</button>
+					</a>
+					<a href="#" class="view-store-menu">
+						<button class="view-store-menu-button">
+							<i class="fa fa-book"></i>
+							<h1 class="view-store-menu-link-title">Bài đăng</h1>
+						</button>
+					</a>
+					<a href="#" class="view-store-menu">
+						<button class="view-store-menu-button no-margin">
+							<i class="fa fa-calendar"></i>
+							<h1 class="view-store-menu-link-title">Sự kiện</h1>
+						</button>
+					</a>
+				</section><!-- End view-store-menu-bar-->
+				<section class="view-store-hot-place border-with-radius event-in-hot-place">
+					<img src="images/ad.jpg" alt="" class="view-store-hot-place-img">
+					<article class="view-store-hot-place-hot-place-name-wrapper"><h2 class="view-store-hot-place-hot-place-title">Sự kiện:</h2><a class="link view-store-hot-place-hot-place-name" href="#">Giảm giá 50% chào mừng quốc tế phụ nữ</a></article>
+					<article class="view-store-hot-place-event-joining-target"><h2 class="view-store-hot-place-hot-place-title">Đối tượng tham gia:</h2><h1 class="view-store-hot-place-hot-place-content">Tất cả mọi người</h1></article>
+					<article class="view-store-hot-place-event-joining-target"><h2 class="view-store-hot-place-hot-place-title">Thời gian:</h2><h1 class="view-store-hot-place-hot-place-content">01.03.2014 - 07.03.2014</h1></article>
+					<article class="view-store-hot-place-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, reprehenderit, explicabo cumque laudantium excepturi itaque expedita delectus id saepe dolor enim molestias repellendus odio quisquam deleniti atque et adipisci!</article>
+				</section><!-- end view-store-hot-place-->
+				<section class="view-store-hot-place border-with-radius produce-in-hot-place">
+					<img src="images/ad.jpg" alt="" class="view-store-hot-place-img">
+					<article class="view-store-hot-place-hot-place-name-wrapper"><h2 class="view-store-hot-place-hot-place-title">Sản phẩm:</h2><a class="link view-store-hot-place-hot-place-name" href="#">Áo khoác siêu nhân</a></article>
+					<article class="view-store-hot-place-event-joining-target"><h2 class="view-store-hot-place-hot-place-title">Số lượng:</h2><h1 class="view-store-hot-place-hot-place-content">30</h1></article>
+					<article class="view-store-hot-place-produce-support"><i class="fa fa-truck"></i><i class="fa fa-exchange"></i></article>
+					<article class="view-store-hot-place-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, reprehenderit, explicabo cumque laudantium excepturi itaque expedita delectus id saepe dolor enim molestias repellendus odio quisquam deleniti atque et adipisci!</article>
+					<article class="result-tags"><h1 class="result-tags-label"><i class="fa fa-tag"></i></h1><a href="#" class="tag result-tag">Thời trang nam</a><a href="#" class="tag result-tag">Áo khoác</a></article>
+				</section><!-- end view-store-hot-place-->
+				<section class="view-store-hot-place border-with-radius post-in-hot-place">
+					<img src="images/ad.jpg" alt="" class="view-store-hot-place-img">
+					<article class="view-store-hot-place-hot-place-name-wrapper"><a class="link view-store-hot-place-hot-place-name" href="#">Lorem ipsum dolor sit amet.</a>
+					<h2 class="view-store-hot-place-hot-place-title">20.03.2014</h2></article>
+					<article class="view-store-hot-place-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, asperiores, consectetur harum saepe adipisci rem. Debitis, earum totam reiciendis sit nam odio nihil iure esse architecto laborum? Necessitatibus, error, molestias voluptatibus itaque incidunt repellat nobis accusantium ad provident corporis similique tempora atque harum nihil beatae aspernatur placeat fugiat ducimus quod in deserunt blanditiis maxime veniam quasi vero facilis sequi labore ut pariatur perspiciatis consequuntur cumque laboriosam cum sapiente nostrum doloribus iure mollitia. Tempore, et, totam ullam a assumenda consequuntur laborum eveniet odio libero accusantium sapiente quas voluptas ea dignissimos distinctio. Maxime veritatis dolorem provident odit velit sint quod quas error.</article>
+				</section><!-- end view-store-hot-place-->
+				<section class="view-store-homepage-produce">
+					<section class="view-store-homepage-produce-tag-group">
+						<article class="view-store-homepage-produce-tag-group-tag-wrapper">
+							<i class="fa fa-tag"></i>
+							<a href="#" class="link view-store-homepage-produce-tag-group-tag">Áo khoác</a>
+						</article><section class="clear"></section>
+						<section class="view-store-homepage-produce-tag-group-produces">
+							<section class="view-store-homepage-produce-tag-group-produce">
+								<article class="view-store-homepage-produce-tag-group-produce-img-wrapper">
+									<img src="images/pic1.jpg" alt="" class="view-store-homepage-produce-tag-group-produce-img">
+								</article><section class="clear"></section>
+								<a href="#" class="link view-store-homepage-produce-tag-group-produce-link">Áo khoác siêu nhân</a><section class="clear"></section>
+								<section class="margin10">
+									<article class="view-store-homepage-produce-tag-group-produce-price-wrapper">
+										<h6 class="view-store-homepage-produce-tag-group-produce-prefixed-price">600.000</h6>
+										<h1 class="view-store-homepage-produce-tag-group-produce-offical-price">300.000 VND</h1>
+									</article>
+								</section><section class="clear"></section>
+								<section class="margin10"><article class="produce-starting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></article><section class="clear"></section>
+								</section><section class="clear"></section>
+								<article class="view-store-homepage-produce-tag-group-produce-button">
+									<button class="view-store-homepage-produce-tag-group-produce-add-cart-button"><h1 class="view-store-homepage-produce-tag-group-produce-button">Thêm vào giỏ</h1><i class="fa fa-shopping-cart"></i></button><section class="clear"></section>
+									<button class="view-store-homepage-produce-tag-group-produce-gift-button"><i class="fa fa-gift"></i><h1 class="view-store-homepage-produce-tag-group-produce-button no-margin">Tặng quà</h1></button>
+								</article>
+							</section><!-- End view-store-homepage-produce-tag-group-produce-->
+							<section class="view-store-homepage-produce-tag-group-produce">
+								<article class="view-store-homepage-produce-tag-group-produce-img-wrapper">
+									<img src="images/pic1.jpg" alt="" class="view-store-homepage-produce-tag-group-produce-img">
+								</article><section class="clear"></section>
+								<a href="#" class="link view-store-homepage-produce-tag-group-produce-link">Áo khoác siêu nhân</a><section class="clear"></section>
+								<section class="margin10">
+									<article class="view-store-homepage-produce-tag-group-produce-price-wrapper">
+										<h6 class="view-store-homepage-produce-tag-group-produce-prefixed-price">600.000</h6>
+										<h1 class="view-store-homepage-produce-tag-group-produce-offical-price">300.000 VND</h1>
+									</article>
+								</section><section class="clear"></section>
+								<section class="margin10"><article class="produce-starting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></article><section class="clear"></section>
+								</section><section class="clear"></section>
+								<article class="view-store-homepage-produce-tag-group-produce-button">
+									<button class="view-store-homepage-produce-tag-group-produce-add-cart-button"><h1 class="view-store-homepage-produce-tag-group-produce-button">Thêm vào giỏ</h1><i class="fa fa-shopping-cart"></i></button><section class="clear"></section>
+									<button class="view-store-homepage-produce-tag-group-produce-gift-button"><i class="fa fa-gift"></i><h1 class="view-store-homepage-produce-tag-group-produce-button no-margin">Tặng quà</h1></button>
+								</article>
+							</section><!-- End view-store-homepage-produce-tag-group-produce-->
+							<section class="view-store-homepage-produce-tag-group-produce">
+								<article class="view-store-homepage-produce-tag-group-produce-img-wrapper">
+									<img src="images/pic2.jpg" alt="" class="view-store-homepage-produce-tag-group-produce-img">
+								</article><section class="clear"></section>
+								<a href="#" class="link view-store-homepage-produce-tag-group-produce-link">Áo khoác siêu nhân</a><section class="clear"></section>
+								<section class="margin10">
+									<article class="view-store-homepage-produce-tag-group-produce-price-wrapper">
+										<h6 class="view-store-homepage-produce-tag-group-produce-prefixed-price">600.000</h6>
+										<h1 class="view-store-homepage-produce-tag-group-produce-offical-price">300.000 VND</h1>
+									</article>
+								</section><section class="clear"></section>
+								<section class="margin10"><article class="produce-starting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></article><section class="clear"></section>
+								</section><section class="clear"></section>
+								<article class="view-store-homepage-produce-tag-group-produce-button">
+									<button class="view-store-homepage-produce-tag-group-produce-add-cart-button"><h1 class="view-store-homepage-produce-tag-group-produce-button">Thêm vào giỏ</h1><i class="fa fa-shopping-cart"></i></button><section class="clear"></section>
+									<button class="view-store-homepage-produce-tag-group-produce-gift-button"><i class="fa fa-gift"></i><h1 class="view-store-homepage-produce-tag-group-produce-button no-margin">Tặng quà</h1></button>
+								</article>
+							</section><!-- End view-store-homepage-produce-tag-group-produce-->
+							<section class="view-store-homepage-produce-tag-group-produce">
+								<article class="view-store-homepage-produce-tag-group-produce-img-wrapper">
+									<img src="images/pic3.jpg" alt="" class="view-store-homepage-produce-tag-group-produce-img">
+								</article><section class="clear"></section>
+								<a href="#" class="link view-store-homepage-produce-tag-group-produce-link">Áo khoác siêu nhân</a><section class="clear"></section>
+								<section class="margin10">
+									<article class="view-store-homepage-produce-tag-group-produce-price-wrapper">
+										<h6 class="view-store-homepage-produce-tag-group-produce-prefixed-price">600.000</h6>
+										<h1 class="view-store-homepage-produce-tag-group-produce-offical-price">300.000 VND</h1>
+									</article>
+								</section><section class="clear"></section>
+								<section class="margin10"><article class="produce-starting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></article><section class="clear"></section>
+								</section><section class="clear"></section>
+								<article class="view-store-homepage-produce-tag-group-produce-button">
+									<button class="view-store-homepage-produce-tag-group-produce-add-cart-button"><h1 class="view-store-homepage-produce-tag-group-produce-button">Thêm vào giỏ</h1><i class="fa fa-shopping-cart"></i></button><section class="clear"></section>
+									<button class="view-store-homepage-produce-tag-group-produce-gift-button"><i class="fa fa-gift"></i><h1 class="view-store-homepage-produce-tag-group-produce-button no-margin">Tặng quà</h1></button>
+								</article>
+							</section><!-- End view-store-homepage-produce-tag-group-produce-->
+							<section class="view-store-homepage-produce-tag-group-produce">
+								<article class="view-store-homepage-produce-tag-group-produce-img-wrapper">
+									<img src="images/pic1.jpg" alt="" class="view-store-homepage-produce-tag-group-produce-img">
+								</article><section class="clear"></section>
+								<a href="#" class="link view-store-homepage-produce-tag-group-produce-link">Áo khoác siêu nhân</a><section class="clear"></section>
+								<section class="margin10">
+									<article class="view-store-homepage-produce-tag-group-produce-price-wrapper">
+										<h6 class="view-store-homepage-produce-tag-group-produce-prefixed-price">600.000</h6>
+										<h1 class="view-store-homepage-produce-tag-group-produce-offical-price">300.000 VND</h1>
+									</article>
+								</section><section class="clear"></section>
+								<section class="margin10"><article class="produce-starting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></article><section class="clear"></section>
+								</section><section class="clear"></section>
+								<article class="view-store-homepage-produce-tag-group-produce-button">
+									<button class="view-store-homepage-produce-tag-group-produce-add-cart-button"><h1 class="view-store-homepage-produce-tag-group-produce-button">Thêm vào giỏ</h1><i class="fa fa-shopping-cart"></i></button><section class="clear"></section>
+									<button class="view-store-homepage-produce-tag-group-produce-gift-button"><i class="fa fa-gift"></i><h1 class="view-store-homepage-produce-tag-group-produce-button no-margin">Tặng quà</h1></button>
+								</article>
+							</section><!-- End view-store-homepage-produce-tag-group-produce-->
+							<section class="view-store-homepage-produce-tag-group-produce">
+								<article class="view-store-homepage-produce-tag-group-produce-img-wrapper">
+									<img src="images/pic1.jpg" alt="" class="view-store-homepage-produce-tag-group-produce-img">
+								</article><section class="clear"></section>
+								<a href="#" class="link view-store-homepage-produce-tag-group-produce-link">Áo khoác siêu nhân</a><section class="clear"></section>
+								<section class="margin10">
+									<article class="view-store-homepage-produce-tag-group-produce-price-wrapper">
+										<h6 class="view-store-homepage-produce-tag-group-produce-prefixed-price">600.000</h6>
+										<h1 class="view-store-homepage-produce-tag-group-produce-offical-price">300.000 VND</h1>
+									</article>
+								</section><section class="clear"></section>
+								<section class="margin10"><article class="produce-starting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></article><section class="clear"></section>
+								</section><section class="clear"></section>
+								<article class="view-store-homepage-produce-tag-group-produce-button">
+									<button class="view-store-homepage-produce-tag-group-produce-add-cart-button"><h1 class="view-store-homepage-produce-tag-group-produce-button">Thêm vào giỏ</h1><i class="fa fa-shopping-cart"></i></button><section class="clear"></section>
+									<button class="view-store-homepage-produce-tag-group-produce-gift-button"><i class="fa fa-gift"></i><h1 class="view-store-homepage-produce-tag-group-produce-button no-margin">Tặng quà</h1></button>
+								</article>
+							</section><!-- End view-store-homepage-produce-tag-group-produce-->
+							<section class="view-store-homepage-produce-tag-group-produce">
+								<article class="view-store-homepage-produce-tag-group-produce-img-wrapper">
+									<img src="images/pic1.jpg" alt="" class="view-store-homepage-produce-tag-group-produce-img">
+								</article><section class="clear"></section>
+								<a href="#" class="link view-store-homepage-produce-tag-group-produce-link">Áo khoác siêu nhân</a><section class="clear"></section>
+								<section class="margin10">
+									<article class="view-store-homepage-produce-tag-group-produce-price-wrapper">
+										<h6 class="view-store-homepage-produce-tag-group-produce-prefixed-price">600.000</h6>
+										<h1 class="view-store-homepage-produce-tag-group-produce-offical-price">300.000 VND</h1>
+									</article>
+								</section><section class="clear"></section>
+								<section class="margin10"><article class="produce-starting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></article><section class="clear"></section>
+								</section><section class="clear"></section>
+								<article class="view-store-homepage-produce-tag-group-produce-button">
+									<button class="view-store-homepage-produce-tag-group-produce-add-cart-button"><h1 class="view-store-homepage-produce-tag-group-produce-button">Thêm vào giỏ</h1><i class="fa fa-shopping-cart"></i></button><section class="clear"></section>
+									<button class="view-store-homepage-produce-tag-group-produce-gift-button"><i class="fa fa-gift"></i><h1 class="view-store-homepage-produce-tag-group-produce-button no-margin">Tặng quà</h1></button>
+								</article>
+							</section><!-- End view-store-homepage-produce-tag-group-produce-->
+							<section class="view-store-homepage-produce-tag-group-produce">
+								<article class="view-store-homepage-produce-tag-group-produce-img-wrapper">
+									<img src="images/pic1.jpg" alt="" class="view-store-homepage-produce-tag-group-produce-img">
+								</article><section class="clear"></section>
+								<a href="#" class="link view-store-homepage-produce-tag-group-produce-link">Áo khoác siêu nhân</a><section class="clear"></section>
+								<section class="margin10">
+									<article class="view-store-homepage-produce-tag-group-produce-price-wrapper">
+										<h6 class="view-store-homepage-produce-tag-group-produce-prefixed-price">600.000</h6>
+										<h1 class="view-store-homepage-produce-tag-group-produce-offical-price">300.000 VND</h1>
+									</article>
+								</section><section class="clear"></section>
+								<section class="margin10"><article class="produce-starting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></article><section class="clear"></section>
+								</section><section class="clear"></section>
+								<article class="view-store-homepage-produce-tag-group-produce-button">
+									<button class="view-store-homepage-produce-tag-group-produce-add-cart-button"><h1 class="view-store-homepage-produce-tag-group-produce-button">Thêm vào giỏ</h1><i class="fa fa-shopping-cart"></i></button><section class="clear"></section>
+									<button class="view-store-homepage-produce-tag-group-produce-gift-button"><i class="fa fa-gift"></i><h1 class="view-store-homepage-produce-tag-group-produce-button no-margin">Tặng quà</h1></button>
+								</article>
+							</section><!-- End view-store-homepage-produce-tag-group-produce-->
+							<section class="view-store-homepage-produce-tag-group-produce">
+								<article class="view-store-homepage-produce-tag-group-produce-img-wrapper">
+									<img src="images/pic1.jpg" alt="" class="view-store-homepage-produce-tag-group-produce-img">
+								</article><section class="clear"></section>
+								<a href="#" class="link view-store-homepage-produce-tag-group-produce-link">Áo khoác siêu nhân</a><section class="clear"></section>
+								<section class="margin10">
+									<article class="view-store-homepage-produce-tag-group-produce-price-wrapper">
+										<h6 class="view-store-homepage-produce-tag-group-produce-prefixed-price">600.000</h6>
+										<h1 class="view-store-homepage-produce-tag-group-produce-offical-price">300.000 VND</h1>
+									</article>
+								</section><section class="clear"></section>
+								<section class="margin10"><article class="produce-starting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></article><section class="clear"></section>
+								</section><section class="clear"></section>
+								<article class="view-store-homepage-produce-tag-group-produce-button">
+									<button class="view-store-homepage-produce-tag-group-produce-add-cart-button"><h1 class="view-store-homepage-produce-tag-group-produce-button">Thêm vào giỏ</h1><i class="fa fa-shopping-cart"></i></button><section class="clear"></section>
+									<button class="view-store-homepage-produce-tag-group-produce-gift-button"><i class="fa fa-gift"></i><h1 class="view-store-homepage-produce-tag-group-produce-button no-margin">Tặng quà</h1></button>
+								</article>
+							</section><!-- End view-store-homepage-produce-tag-group-produce-->
+							<section class="view-store-homepage-produce-tag-group-produce">
+								<article class="view-store-homepage-produce-tag-group-produce-img-wrapper">
+									<img src="images/pic1.jpg" alt="" class="view-store-homepage-produce-tag-group-produce-img">
+								</article><section class="clear"></section>
+								<a href="#" class="link view-store-homepage-produce-tag-group-produce-link">Áo khoác siêu nhân</a><section class="clear"></section>
+								<section class="margin10">
+									<article class="view-store-homepage-produce-tag-group-produce-price-wrapper">
+										<h6 class="view-store-homepage-produce-tag-group-produce-prefixed-price">600.000</h6>
+										<h1 class="view-store-homepage-produce-tag-group-produce-offical-price">300.000 VND</h1>
+									</article>
+								</section><section class="clear"></section>
+								<section class="margin10"><article class="produce-starting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></article><section class="clear"></section>
+								</section><section class="clear"></section>
+								<article class="view-store-homepage-produce-tag-group-produce-button">
+									<button class="view-store-homepage-produce-tag-group-produce-add-cart-button"><h1 class="view-store-homepage-produce-tag-group-produce-button">Thêm vào giỏ</h1><i class="fa fa-shopping-cart"></i></button><section class="clear"></section>
+									<button class="view-store-homepage-produce-tag-group-produce-gift-button"><i class="fa fa-gift"></i><h1 class="view-store-homepage-produce-tag-group-produce-button no-margin">Tặng quà</h1></button>
+								</article>
+							</section><!-- End view-store-homepage-produce-tag-group-produce-->
+							<section class="view-store-homepage-produce-tag-group-produce">
+								<article class="view-store-homepage-produce-tag-group-produce-img-wrapper">
+									<img src="images/pic1.jpg" alt="" class="view-store-homepage-produce-tag-group-produce-img">
+								</article><section class="clear"></section>
+								<a href="#" class="link view-store-homepage-produce-tag-group-produce-link">Áo khoác siêu nhân</a><section class="clear"></section>
+								<section class="margin10">
+									<article class="view-store-homepage-produce-tag-group-produce-price-wrapper">
+										<h6 class="view-store-homepage-produce-tag-group-produce-prefixed-price">600.000</h6>
+										<h1 class="view-store-homepage-produce-tag-group-produce-offical-price">300.000 VND</h1>
+									</article>
+								</section><section class="clear"></section>
+								<section class="margin10"><article class="produce-starting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></article><section class="clear"></section>
+								</section><section class="clear"></section>
+								<article class="view-store-homepage-produce-tag-group-produce-button">
+									<button class="view-store-homepage-produce-tag-group-produce-add-cart-button"><h1 class="view-store-homepage-produce-tag-group-produce-button">Thêm vào giỏ</h1><i class="fa fa-shopping-cart"></i></button><section class="clear"></section>
+									<button class="view-store-homepage-produce-tag-group-produce-gift-button"><i class="fa fa-gift"></i><h1 class="view-store-homepage-produce-tag-group-produce-button no-margin">Tặng quà</h1></button>
+								</article>
+							</section><!-- End view-store-homepage-produce-tag-group-produce-->
+						</section><!-- End view-store-homepage-produce-tag-group-produces-->
+					</section><!-- End view-store-homepage-produce-tag-group-->
+				</section><!-- End view-store-homepage-produce-->
+			</section><!-- End view-store-homepage-->
+		</section><!--end wrapper-->
+		<section class="hidden-field" id="buy-item-field"><!-- ****************************************** Phần này là khi user click vào nút mua hàng****************************************************-->
+				<section class="float-left">
+					<section class="buy-item-field-item-info">
+						<h1 class="hidden-field-title">Mua hàng</h1>
+						<article class="buy-item-field-item-info-article"><h2 class="buy-item-field-item-info-title">Cửa hàng:</h2><h3 class="buy-item-field-item-info-content"><a href="#" class="link buy-from-store">aBC Store</a></h3></article>
+						<article class="buy-item-field-item-info-article"><h2 class="buy-item-field-item-info-title">Số sản phẩm:</h2><h3 class="buy-item-field-item-info-content">1</h3></article>
+						<article class="buy-item-field-item-info-article"><h2 class="buy-item-field-item-info-title">Giá trị đơn hàng:</h2><h3 class="buy-item-field-item-info-content">1.400.000 VND</h3></article>
+						<article class="buy-item-field-item-info-article"><h2 class="buy-item-field-item-info-title">Tiện ích được hỗ trợ:</h2><h3 class="buy-item-field-item-info-content"><i class="fa fa-truck fa-lg"></i></h3></article>
+					</section><!-- End buy-item-field-item-info-->
+					<section class="buy-item-field-cus-info">
+						<h1 class="hidden-field-title">Thông tin của bạn</h1>
+						<form action="">
+							<article class="buy-item-field-cus-info-article"><h2 class="buy-item-field-cus-info-title">Họ và tên:</h2><input type="text" class="border-with-radius buy-item-field-cus-info-input" required></article>
+							<article class="buy-item-field-cus-info-article"><h2 class="buy-item-field-cus-info-title">Địa chỉ nhận hàng:</h2><input type="text" class="border-with-radius buy-item-field-cus-info-input" required></article>
+							<article class="buy-item-field-cus-info-article"><h2 class="buy-item-field-cus-info-title">Thành phố:</h2>
+								<select name="" id="" class="buy-item-field-cus-info-select border-with-radius" required>
+									<option value="" class="select-option-form buy-item-field-cus-info-option">Tỉnh/Thành phố</option>
+								</select>
+								<select name="" id="" class="buy-item-field-cus-info-select border-with-radius" required>
+									<!-- Quận của tỉnh nhập ở form cạnh-->
+									<option value="" class="select-option-form buy-item-field-cus-info-option">Quận</option>
+								</select>
+								<select name="" id="" class="buy-item-field-cus-info-select border-with-radius" required>
+									<!-- Quận của tỉnh nhập ở form cạnh-->
+									<option value="" class="select-option-form buy-item-field-cus-info-option">Phường</option>
+								</select>
+							</article>
+							<article class="buy-item-field-cus-info-article"><h2 class="buy-item-field-cus-info-title">Số điện thoại:</h2><input type="text" class="border-with-radius buy-item-field-cus-info-input" required></article>
+							<h2 class="hidden-field-title-explained">Những thông tin này dùng để giao hàng cho bạn, vì vậy hãy điền chúng thật chính xác.</h2>
+							<button class="buy-item-field-cus-info-submit float-right" type="submit">Mua hàng</button>
+						</form>
+					</section><!-- End buy-item-field-cus-info -->
+				</section>
+				<section class="buy-item-field-order-total-value float-right">
+					<ul>
+						<li class="buy-item-field-item-order-total-value-title">Thành tiền</li>
+						<li class="buy-item-field-item-order-total-value-content">1.500.000 VND</li>
+						<li class="buy-item-field-item-order-total-value-detail-info">1.400.000 VND giá trị đơn hàng</li>
+						<li class="buy-item-field-item-order-total-value-detail-info">50.000 VND phí chuyển hàng</li>
+						<li class="buy-item-field-item-order-total-value-detail-info">40.000 VND phí phát sinh</li>
+						<li class="buy-item-field-item-order-total-value-detail-info">10.000 VND phí dịch vụ</li>
+					</ul>
+				</section><!-- End buy-item-field-order-total-value-->
+		</section><!-- End buy-item-field-->
+	</body>
+</html>
