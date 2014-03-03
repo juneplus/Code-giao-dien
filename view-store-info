@@ -40,7 +40,7 @@
 </script>
 		<section id="wrapper" class="view-store">
 			<section class="main-site-header none-border">
-				<article class="juneplus"><a href="#"><h1>June<span class="green">plus</span></h1></a></article>
+				<article class="juneplus"><a href="#"><h2>June<span class="green">plus</span></h2></a></article>
 				<form action="" class="searching-form">
 					<input type="text" name="search" placeHolder="Tìm kiếm sản phẩm, cửa hàng, bài đăng,...">
 					<button type="submit"><i class="fa fa-search"></i></button>
@@ -67,7 +67,7 @@
 								<li class="rate-bought-produce unread">
 									<img src="images/pic1.jpg" alt="" class="produce-img">
 									<h2 class="rate-produce-question">Bạn nghĩ sao về món đồ này ?</h2>
-									<a href="" class="link-to-produce"><h1 class="produce-name">Áo khoác siêu nhân</h1></a>
+									<a href="" class="link-to-produce"><h2 class="produce-name">Áo khoác siêu nhân</h2></a>
 									<section class="star-rating"></section><!--End star-rating-->
 									<form action="">
 										<input type="text" class="rate-bought-produce-input" placeHolder="Bạn nghĩ gì về món đồ này?">
@@ -118,7 +118,7 @@
 								<li class="users-messages unread">
 									<a href="" class="link-to-message">
 										<img src="images/hoang.jpg" alt="" class="friends-avatar">
-										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h2 href="#" class="message-sender">Việt Hoàng</h2>
 										<h6 class="sent-time">5:00</h6>
 										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
 									</a>
@@ -127,7 +127,7 @@
 								<li class="users-messages unread">
 									<a href="" class="link-to-message">
 										<img src="images/hoang.jpg" alt="" class="friends-avatar">
-										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h2 href="#" class="message-sender">Việt Hoàng</h2>
 										<h6 class="sent-time">5:00</h6>
 										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
 									</a>
@@ -136,7 +136,7 @@
 								<li class="users-messages unread">
 									<a href="" class="link-to-message">
 										<img src="images/hoang.jpg" alt="" class="friends-avatar">
-										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h2 href="#" class="message-sender">Việt Hoàng</h2>
 										<h6 class="sent-time">5:00</h6>
 										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
 									</a>
@@ -145,7 +145,7 @@
 								<li class="users-messages unread">
 									<a href="" class="link-to-message">
 										<img src="images/hoang.jpg" alt="" class="friends-avatar">
-										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h2 href="#" class="message-sender">Việt Hoàng</h2>
 										<h6 class="sent-time">5:00</h6>
 										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
 									</a>
@@ -154,7 +154,7 @@
 								<li class="users-messages unread">
 									<a href="" class="link-to-message">
 										<img src="images/hoang.jpg" alt="" class="friends-avatar">
-										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h2 href="#" class="message-sender">Việt Hoàng</h2>
 										<h6 class="sent-time">5:00</h6>
 										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
 									</a>
@@ -163,7 +163,7 @@
 								<li class="users-messages unread">
 									<a href="" class="link-to-message">
 										<img src="images/hoang.jpg" alt="" class="friends-avatar">
-										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h2 href="#" class="message-sender">Việt Hoàng</h2>
 										<h6 class="sent-time">5:00</h6>
 										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
 									</a>
@@ -172,7 +172,7 @@
 								<li class="users-messages unread">
 									<a href="" class="link-to-message">
 										<img src="images/hoang.jpg" alt="" class="friends-avatar">
-										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h2 href="#" class="message-sender">Việt Hoàng</h2>
 										<h6 class="sent-time">5:00</h6>
 										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
 									</a>
@@ -181,7 +181,7 @@
 								<li class="users-messages unread">
 									<a href="" class="link-to-message">
 										<img src="images/hoang.jpg" alt="" class="friends-avatar">
-										<h1 href="#" class="message-sender">Việt Hoàng</h1>
+										<h2 href="#" class="message-sender">Việt Hoàng</h2>
 										<h6 class="sent-time">5:00</h6>
 										<h2 class="messages-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, laborum!...</h2>
 									</a>
@@ -277,13 +277,13 @@
 					<img src="images/store-ava2.jpg" alt="" class="view-store-header-store-img">
 					<article class="view-store-header-wrapper-01"><i class="fa fa-check-circle-o"></i><h1 class="view-store-header-store-name">aBC Store</h1></article>
 					<h2 class="view-store-header-store-address">22 Tây Hồ, Hà Nội, Việt Nam</h2>
-					<h1 class="view-store-header-store-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, sed vel voluptate laboriosam tempore necessitatibus tempora earum veniam aliquam quas!</h1><section class="clear"></section>
+					<h2 class="view-store-header-store-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, sed vel voluptate laboriosam tempore necessitatibus tempora earum veniam aliquam quas!</h2><section class="clear"></section>
 					<article class="view-store-header-store-follower-wrapper"><i class="fa fa-heart"></i><h3 class="view-store-header-store-follower">3200</h3></article>
 				</section><!-- End view-store-header-basic-store-info-->
 				<section class="view-store-header-rating-info float-right">
 					<section class="view-store-header-rating-wrapper">
 						<section class="star-rating-big"></section><!--End star-rating-->
-						<h1 class="view-store-header-store-rating-point">3.0</h1>
+						<h2 class="view-store-header-store-rating-point">3.0</h2>
 						<h2 class="view-store-header-store-rated-number">320.000 bình chọn</h2>
 					</section><!-- End view-store-header-rating-wrapper-->
 				</section><!-- End view-store-header-rating-info-->
@@ -291,19 +291,19 @@
 			</section><!-- End view-store-header-->
 			<section class="clear"></section>
 			<section class="view-store-info">
-				<h1 class="view-store-info-store-name">aBC Store</h1>
+				<h2 class="view-store-info-store-name">aBC Store</h2>
 				<section class="view-store-info-basic-info border-with-radius">
 					<ul>
 						<li class="view-store-info-info-content">
 							<h2 class="basic-info-label">Số điện thoại:</h2>
-							<h1 class="basic-info">0999.999.999</h1>
+							<h2 class="basic-info">0999.999.999</h2>
 						</li>
 						<li class="view-store-info-info-content">
 							<h2 class="basic-info-label">Địa chỉ:</h2>
-							<h1 class="basic-info">22 Tây Hồ, Hoàn Kiếm, Hà Nội</h1>
+							<h2 class="basic-info">22 Tây Hồ, Hoàn Kiếm, Hà Nội</h2>
 						</li>
 						<li class="view-store-info-info-content the-last">
-							<h1 class="basic-info marginleft20">Cửa hàng phổ thông</h1>
+							<h2 class="basic-info marginleft20">Cửa hàng phổ thông</h2>
 						</li>
 					</ul>
 				</section><!-- End view-store-info-basic-info-->
@@ -314,14 +314,14 @@
 					<ul>
 						<li class="view-store-info-store-description-content-wrapper">
 							<h2 class="basic-info-label">Giới thiệu chung:</h2>
-							<h1 class="view-store-info-store-description-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolores, inventore illum dolore placeat itaque praesentium. Ullam, aliquid, quia, placeat minus recusandae ab sed ipsam iusto delectus cum ex sequi!</h1>
+							<h2 class="view-store-info-store-description-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolores, inventore illum dolore placeat itaque praesentium. Ullam, aliquid, quia, placeat minus recusandae ab sed ipsam iusto delectus cum ex sequi!</h2>
 						</li>
 						<li class="view-store-info-store-description-content-wrapper">
 							<h2 class="basic-info-label">Chi tiết:</h2>
-							<h1 class="view-store-info-store-description-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, vel, ipsam nesciunt aliquid reprehenderit ab repellendus maxime praesentium. Quo, voluptatem, repudiandae laudantium maiores odit cumque officiis ut illum iure esse praesentium necessitatibus eveniet nihil numquam dolorem quidem ea sapiente a molestias nulla recusandae voluptatum totam tenetur quaerat voluptatibus eaque sed.</h1>
+							<h2 class="view-store-info-store-description-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, vel, ipsam nesciunt aliquid reprehenderit ab repellendus maxime praesentium. Quo, voluptatem, repudiandae laudantium maiores odit cumque officiis ut illum iure esse praesentium necessitatibus eveniet nihil numquam dolorem quidem ea sapiente a molestias nulla recusandae voluptatum totam tenetur quaerat voluptatibus eaque sed.</h2>
 						</li>
 						<li class="view-store-info-store-description-content-wrapper the-last">
-							<h1 class="result-tags-label"><i class="fa fa-tag"></i></h1><a href="#" class="tag result-tag">Thời trang nam</a><a href="#" class="tag result-tag">Áo khoác</a>
+							<h2 class="result-tags-label"><i class="fa fa-tag"></i></h2><a href="#" class="tag result-tag">Thời trang nam</a><a href="#" class="tag result-tag">Áo khoác</a>
 						</li>
 					</ul>
 				</section><!-- End view-store-info-store-description-->
@@ -345,27 +345,27 @@
 						</li>
 						<li class="view-store-info-info-content">
 							<h2 class="basic-info-label">Ngày bắt đầu:</h2>
-							<h1 class="basic-info">05.11.2014</h1>
+							<h2 class="basic-info">05.11.2014</h2>
 						</li>
 						<li class="view-store-info-info-content">
 							<h2 class="basic-info-label">Ngày bắt đầu:</h2>
-							<h1 class="basic-info">05.11.2014</h1>
+							<h2 class="basic-info">05.11.2014</h2>
 						</li>
 						<li class="view-store-info-info-content">
 							<h2 class="basic-info-label">Sản phẩm đã bán:</h2>
-							<h1 class="basic-info">100</h1>
+							<h2 class="basic-info">100</h2>
 						</li>
 						<li class="view-store-info-info-content">
 							<h2 class="basic-info-label">Khách hàng:</h2>
-							<h1 class="basic-info">100</h1>
+							<h2 class="basic-info">100</h2>
 						</li>
 						<li class="view-store-info-info-content">
 							<h2 class="basic-info-label">Theo giõi:</h2>
-							<h1 class="basic-info">100</h1>
+							<h2 class="basic-info">100</h2>
 						</li>
 						<li class="view-store-info-info-content the-last">
 							<h2 class="basic-info-label">Sự kiện:</h2>
-							<h1 class="basic-info">100</h1>
+							<h2 class="basic-info">100</h2>
 						</li>
 					</ul>
 				</section><!-- End view-store-info-advance-info-->
@@ -373,15 +373,15 @@
 					<ul>
 						<li class="view-store-info-bank-acc-info-content">
 							<h2 class="basic-info-label">Vietcombank:</h2>
-							<h1 class="basic-info">123456789</h1>
+							<h2 class="basic-info">123456789</h2>
 						</li>
 						<li class="view-store-info-bank-acc-info-content">
 							<h2 class="basic-info-label">ACB:</h2>
-							<h1 class="basic-info">123456789</h1>
+							<h2 class="basic-info">123456789</h2>
 						</li>
 						<li class="view-store-info-bank-acc-info-content">
 							<h2 class="basic-info-label">Sacombank:</h2>
-							<h1 class="basic-info">123456789</h1>
+							<h2 class="basic-info">123456789</h2>
 						</li>
 					</ul>
 				</section><!-- End view-store-info-bank-acc-info-->
@@ -390,14 +390,14 @@
 		<section class="hidden-field" id="buy-item-field"><!-- ****************************************** Phần này là khi user click vào nút mua hàng****************************************************-->
 				<section class="float-left">
 					<section class="buy-item-field-item-info">
-						<h1 class="hidden-field-title">Mua hàng</h1>
+						<h2 class="hidden-field-title">Mua hàng</h2>
 						<article class="buy-item-field-item-info-article"><h2 class="buy-item-field-item-info-title">Cửa hàng:</h2><h3 class="buy-item-field-item-info-content"><a href="#" class="link buy-from-store">aBC Store</a></h3></article>
 						<article class="buy-item-field-item-info-article"><h2 class="buy-item-field-item-info-title">Số sản phẩm:</h2><h3 class="buy-item-field-item-info-content">1</h3></article>
 						<article class="buy-item-field-item-info-article"><h2 class="buy-item-field-item-info-title">Giá trị đơn hàng:</h2><h3 class="buy-item-field-item-info-content">1.400.000 VND</h3></article>
 						<article class="buy-item-field-item-info-article"><h2 class="buy-item-field-item-info-title">Tiện ích được hỗ trợ:</h2><h3 class="buy-item-field-item-info-content"><i class="fa fa-truck fa-lg"></i></h3></article>
 					</section><!-- End buy-item-field-item-info-->
 					<section class="buy-item-field-cus-info">
-						<h1 class="hidden-field-title">Thông tin của bạn</h1>
+						<h2 class="hidden-field-title">Thông tin của bạn</h2>
 						<form action="">
 							<article class="buy-item-field-cus-info-article"><h2 class="buy-item-field-cus-info-title">Họ và tên:</h2><input type="text" class="border-with-radius buy-item-field-cus-info-input" required></article>
 							<article class="buy-item-field-cus-info-article"><h2 class="buy-item-field-cus-info-title">Địa chỉ nhận hàng:</h2><input type="text" class="border-with-radius buy-item-field-cus-info-input" required></article>

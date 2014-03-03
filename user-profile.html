@@ -319,7 +319,7 @@
 						<section class="name-and-avatar">
 							<button class="change-profile-pic"><img src="images/mypic.jpg" alt="" class="user-info-user-avatar"></button>
 							<h1 class="user-info-user-name">Quảng Nguyễn</h1>
-							<button class="change-user-name"><i class="fa fa-pencil fa-lg"></i></button>
+							<a href="#user-profile-change-info" class="fancybox"><button class="change-user-name"><i class="fa fa-pencil fa-lg"></i></button></a>
 						</section><!--End name-and-avatar-->
 						<section class="button-history-link">
 							<section class="user-info-history">
@@ -353,7 +353,7 @@
 								<li class="user-profile-basic-info">
 									<h2 class="basic-info-label">Email:</h2>
 									<h1 class="basic-info user-profile-email-info changeable">dongcaustreets@gmail.com</h1>
-									<button class="user-basic-info-change-button"><i class="fa fa-pencil"></i></button>
+									<a href="#user-profile-change-info" class="fancybox"><button class="user-basic-info-change-button"><i class="fa fa-pencil"></i></button></a>
 								</li><!--End user-profile-basic-info-->
 								<li class="user-profile-basic-info">
 									<h2 class="basic-info-label">Địa chỉ:</h2>
@@ -488,6 +488,49 @@
 				</section><!--End user-content-->
 			</section><!--End main-site-content-->
 		</section><!--end wrapper-->
+		<section class="hidden-field user-profile-change-info" id="user-profile-change-info">
+			<h2 class="user-profile-advance-setting-label">Chỉnh sửa thông tin cá nhân</h2>
+			<form action="">
+				<article class="user-profile-advance-setting-add-info">
+					<span class="formTitle">Họ tên</span>
+					<input type="text" class="user-profile-advance-setting-add-info-input border-with-radius">
+					<section class="clear"></section>
+				</article>
+				<article class="user-profile-advance-setting-add-info">
+					<span class="formTitle">Địa chỉ</span>
+					<input type="email" class="user-profile-advance-setting-add-info-input border-with-radius">
+					<section class="clear"></section>
+				</article>
+				<article class="user-profile-advance-setting-add-info">
+					<span class="formTitle">Thành phố</span>
+					<select name="" id="" class="user-profile-advance-setting-address-selection border-with-radius">
+					
+					</select>
+					<section class="clear"></section>
+				</article>
+				<article class="user-profile-advance-setting-add-info">
+					<span class="formTitle">Ngày sinh</span>
+					<section class="float-right">
+						<select name="" id="" class="user-profile-advance-setting-address-selection border-with-radius">
+						
+						</select>
+						<select name="" id="" class="user-profile-advance-setting-address-selection border-with-radius">
+						
+						</select>
+						<select name="" id="" class="user-profile-advance-setting-address-selection border-with-radius">
+						
+						</select>
+					</section>
+					<section class="clear"></section>
+				</article>
+				<article class="user-profile-advance-setting-add-info">
+					<span class="formTitle">Giới tính</span>
+					<input type="text" class="user-profile-advance-setting-add-info-input border-with-radius">
+					<section class="clear"></section>
+				</article>
+				<button class="user-profile-advance-setting-submit border-with-radius">Xong</button>
+			</form>
+		</section><!-- End #user-profile-change-info-->
 		<section class="hidden-field" id="buy-item-field"><!-- ****************************************** Phần này là khi user click vào nút mua hàng****************************************************-->
 				<section class="float-left">
 					<section class="buy-item-field-item-info">
